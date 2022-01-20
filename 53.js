@@ -1,3 +1,4 @@
+// changing albumID with normal ID
 var data = [
     {
       "albumId": 1,
@@ -34999,13 +35000,14 @@ var data = [
       "url": "https://via.placeholder.com/600/6dd9cb",
       "thumbnailUrl": "https://via.placeholder.com/150/6dd9cb"
     }
-  ]
+]
+
+let temp;
 
 for (let i = 0; i < data.length; i++)
 {
-    if (data[i].id % 2 == 0)
-    {
-        data[i].url = data[i].url.replace("https", "http");
-        console.log(data[i].url);
-    }
+    temp = data[i].albumId;
+    data[i].albumId = data[i].id;
+    data[i].id = temp;
+    console.log(data[i]);
 }

@@ -233,5 +233,5 @@ var data = [
 
 for (let i = 0; i < data.length; i++)
 {
-    console.log(`Hey ${data[i].name}, your email is ${data[i].email} & your lattitude is ${data[i].lat} & your city is ${data[i].city}`);
+    console.log(`Hey ${data[i].name}, your email is ${data[i].email} & your lattitude is ${data[i].address.geo.lat} & your city is ${data[i].address.city}`);
 }
