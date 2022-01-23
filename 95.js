@@ -1,0 +1,1 @@
+console.log(typeof '58' === "number" && !isNaN('58'));
