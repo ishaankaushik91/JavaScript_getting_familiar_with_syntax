@@ -1,4 +1,4 @@
-// Printing Cousin Primes (Purely Functional)
+// Printing Cousin Primes (Loop)
 function Increment(range) {
     if (range <= 1000) {
         if ((PrimeCheck(range) == 0) && (PrimeCheck(range + 4) == 0)) {
